@@ -13,7 +13,6 @@ plot(t.y1)
 cor(t.x, t.y)
 cor(t.x1, t.y1)
 
-
 #Aufgabe 4.5
 A <- 3/4
 B <- 2/3
@@ -30,5 +29,4 @@ fractions(A+B - A*B)
 #4.6
 erdbeben <- 0.04
 taifung <- 0.08
-
 erdbeben+taifung - erdbeben*taifung
