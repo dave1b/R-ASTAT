@@ -10,6 +10,7 @@ var_X
 sd_X <- sqrt(var_X)
 sd_X
 
+#Weiteres Beispiel mit verschiedenen Wahr'k
 x2 <- c(0,2,3,4,10,11)
 p2 <- c(4/9, 1/9,1/9,1/9,1/9,1/9)
 E_X2 <- sum(x2*p2)
@@ -18,7 +19,3 @@ var_X2 <- sum((x2- E_X2)^2*p2)
 var_X2
 sd_X2 <- sqrt(var_X2)
 sd_X2
-
-
-#Aufgabe 5.1
-
