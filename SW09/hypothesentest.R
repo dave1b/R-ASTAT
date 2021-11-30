@@ -34,3 +34,4 @@ paste("pValue: ",  pValue)
 
 #c
 t.test(brotMessung, mu=50, alternative = "less")
+t.test(brotMessung, 50, alternative = "less")
