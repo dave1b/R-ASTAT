@@ -1,5 +1,5 @@
 setwd("C:/Users/Dave/Documents/GitHub/R-Code Dave/DBS-Analyse")
-datenSet <- read.csv("AllData_Europe_2015.csv")#[, -1]
+datenSet <- read.csv("AllData_Africa_2015.csv")#[, -1]
 #datenSet <-  na.omit(datenSet) 
 #Economic
 pairs(~suicideRateTotal+unemploymentPTotal+RatioAtNationalPovertyLine+MeanPPP_Month+GiniIndex+GrossNationalIncome,
@@ -17,6 +17,9 @@ pairs(~suicideRateTotal+HapinessScore+PsychiatristsRate+PsychologistsRate+Nurses
 #GINI
 pairs(~suicideRateTotal+GiniIndex,
       data = datenSet, pch = "+",col = "black")
+
+plot(~suicideRateTotal+GiniIndex,
+     data = datenSet,pch = "+",col = "blue", main="Africa 2015",xlab="totale suicide", ylab="Gini Index")
 
 summary(datenSet)
 
